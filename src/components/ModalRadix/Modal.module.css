@@ -28,18 +28,22 @@
     height: 40px;
 }
 .modalStyle {
-    //position: absolute;
-    background-color: rgb(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: auto;    
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.3);
+   inset: 0;
+   //animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);   
 }
 .renderContent {
-    min-width: 300px;
-    background: white;
-    padding: 30px;
-    border: none;
-    border-radius: 4px;
+  //background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 6px;
+  //box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  //transform: translate(-50%, -50%);
+  //width: 100vw;
+  //max-width: 450px;
+  //max-height: 85vh;
+  padding: 25px;
+  //animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
