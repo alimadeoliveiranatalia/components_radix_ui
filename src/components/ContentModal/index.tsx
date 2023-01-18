@@ -12,7 +12,7 @@ export function ContentModal({ area, empresa, escola}:ModalProps){
         <div className={styles.container}>
             <div className={styles.headermodal}>
                 <span>{area}</span>
-                <AiFillCloseCircle className={styles.iconClose}/>
+                <AiFillCloseCircle className={styles.icon}/>
             </div>
             <div>
                 <table className={styles.table}>

@@ -15,9 +15,11 @@ export function ModalRadix(){
                 </button>
             </Dialog.Trigger>
             <Dialog.Portal>
-                <Dialog.Content>
-                    <ContentModal area="Agronegocio" empresa="Nokia" escola="Senai - Instituto Anchieta"/>
-                </Dialog.Content>
+                <Dialog.Overlay className={styles.modalStyle}>
+                    <Dialog.Content className={styles.renderContent}>
+                        <ContentModal area="Agronegocio" empresa="Nokia" escola="Senai - Instituto Anchieta"/>
+                    </Dialog.Content>
+                </Dialog.Overlay>
             </Dialog.Portal>
         </Dialog.Root>
     )
